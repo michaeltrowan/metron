@@ -22,7 +22,7 @@
 #
 LOGFILE="./ansible.log"
 DEPLOYDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-EXTRA_ARGS="-v ${@:1}"
+EXTRA_ARGS="-vvv ${@:1}"
 NOW=`date`
 DEFAULT_ENV="metron-test"
 DEFAULT_ENV_FILE="./.metron-env"

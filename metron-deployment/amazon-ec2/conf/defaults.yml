@@ -32,7 +32,7 @@ amis_by_region:
 # ec2
 env: metron-test
 region: us-west-2
-instance_type: m4.xlarge
+instance_type: m4.4xlarge
 volume_type: standard
 key_name: metron-key
 xvda_vol_size: 50
@@ -45,7 +45,8 @@ ambari_host: "{{ groups.ambari_master[0] }}"
 ambari_port: 8080
 ambari_user: admin
 ambari_password: admin
-cluster_type: small_cluster
+#cluster_type: small_cluster
+cluster_type: single_node_vm
 
 # hbase
 pcap_hbase_table: pcap

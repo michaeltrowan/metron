@@ -16,7 +16,11 @@
 #
 ---
 dependencies:
-  - epel
-  - python-pip
-  - httplib2
-  - java_jdk
+  - role: epel
+    become: true
+  - role: python-pip
+    become: true
+  - role: httplib2
+    become: true
+  - role: java_jdk
+    become: true
