@@ -1,0 +1,21 @@
+---
+location:
+geolocation:
+groups:
+pattern:
+anonymize: false
+annotate: false
+scan_time: 60
+frequency:
+  minute: "*/5"
+minimum_rssi: -1
+maximum_rssi: -1
+# anon_salt: "$2a$31$FWpEhDxhvvb.g2/S6xrcKe"
+
+simulation_db_host: scannerdb.documents.azure.com
+simulation_db_port: 10255
+simulation_db_ssl: true
+simulation_db_replica: "replicaSet=globaldb"
+simulation_db_name: athings
+simulation_db_user: scannerdb
+simulation_db_passwd: "0UPKuXqxT8bnKJtboIwoiIiGrTUK7Xm5qxEuhMTDlf2zR78t7LsKpzY5kUDVOadY3uLV6Lro9NUnviURceOxLw=="
